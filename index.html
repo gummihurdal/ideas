@@ -7,6 +7,7 @@
 <meta name="description" content="Every business idea on one page: the market, an honest chance of success from 0 to 10, and the estimated cost to launch.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Jost:wght@300;400;500&display=swap">
 <style>
+  html{scroll-padding-top:70px;scroll-behavior:smooth}
   :root{--bg:#f4f4f1;--card:#fff;--ink:#1a1b19;--ink2:#5c5f5a;--line:#dedfd9;--acc:#2b4d46}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,"Helvetica Neue",Arial,sans-serif;font-weight:300;line-height:1.6;font-size:17px}
@@ -15,7 +16,6 @@
   h1{font-size:clamp(40px,7vw,72px)}
   h2{font-size:30px;font-weight:500}
   p{margin:0 0 1em;max-width:62ch}
-  header{padding:80px 0 40px}
   header p{color:var(--ink2);font-size:20px}
   .idea{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
   .idea .meta{display:grid;gap:14px}
@@ -32,18 +32,53 @@
   .status{font-size:13px;color:var(--ink2);margin-bottom:10px}
   .template{border-style:dashed;color:var(--ink2)}
   footer{padding:40px 0;color:var(--ink2);font-size:14px}
+  .top{position:sticky;top:0;z-index:5;background:rgba(244,244,241,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
+  .top .brand{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:500;text-decoration:none;color:var(--ink)}
+  .top .items{display:flex;flex-wrap:wrap;gap:20px;font-size:16px}
+  .top .items a{text-decoration:none;color:var(--ink)}
+  .top .items a:hover{color:var(--acc)}
+  header{padding:56px 0 24px}
+  .overview{margin-bottom:40px}
+  .overview table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .overview th,.overview td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  .overview th{font-weight:500;background:#ecece8}
+  .overview a{color:var(--acc)}
+  @media (max-width:700px){.overview{overflow-x:auto}.overview table{min-width:640px}}
   @media (max-width:700px){.idea{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
+<nav class="top" aria-label="Business ideas">
+  <div class="wrap">
+    <a class="brand" href="#top">Ideas</a>
+    <div class="items">
+      <a href="#overview">Overview</a>
+      <a href="#thel">ÞEL</a>
+      <a href="#grace">Grace</a>
+      <a href="https://gummihurdal.github.io/thel/ideas.html">ÞEL sub-ideas</a>
+    </div>
+  </div>
+</nav>
+<header id="top"><div class="wrap">
   <h1>Ideas</h1>
   <p>Every business concept, judged the same way: who the market is, an honest chance of success from 0 to 10, and what it would cost to find out. Scores are before any money is spent and move as facts come in.</p>
 </div></header>
 
 <main class="wrap">
 
-<article class="idea">
+<section id="overview" class="overview" aria-label="Overview">
+  <h2>Overview</h2>
+  <table>
+    <thead><tr><th>Idea</th><th>Market</th><th>Chance</th><th>Cost, lean · full</th><th>Links</th></tr></thead>
+    <tbody>
+      <tr><td><a href="#thel">ÞEL</a> — luxury label on Icelandic materials</td><td>Luxury natural materials, US and EU; Reykjavík tourists first</td><td>5 / 10</td><td>€79k · €346k</td><td><a href="https://gummihurdal.github.io/thel/">Site</a> · <a href="https://gummihurdal.github.io/thel/business.html">Plan</a> · <a href="https://gummihurdal.github.io/thel/ideas.html">9 sub-ideas</a></td></tr>
+      <tr><td><a href="#grace">Grace</a> — midlife wellness company</td><td>Women 45–65 in DE, CH, AT</td><td>5 / 10</td><td>€75k · €165k</td><td><a href="https://gummihurdal.github.io/grace-wellness/">Plan</a> · <a href="https://gummihurdal.github.io/grace-wellness/render.html">3D</a></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<article class="idea" id="thel">
   <div>
     <div class="status">Concept · October 2026 · brand name ÞEL</div>
     <h2>ÞEL — a luxury label built on Icelandic materials</h2>
@@ -68,7 +103,7 @@
   </div>
 </article>
 
-<article class="idea">
+<article class="idea" id="grace">
   <div>
     <div class="status">Concept · October 2026 · working name Grace</div>
     <h2>Grace — a midlife wellness company for Europe</h2>
