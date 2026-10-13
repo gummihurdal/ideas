@@ -49,6 +49,12 @@
   .pouch .foot{display:flex;justify-content:space-between;font-size:10px;border-top:1px solid currentColor;opacity:.85;padding-top:8px;margin-top:12px}
   .pouch .foot i{display:inline-block;width:12px;height:10px;border-radius:50% 50% 45% 45%;background:currentColor;margin-right:5px;vertical-align:middle}
   @media (max-width:420px){.pouch .brand{font-size:40px}}
+  .law{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px}
+  .law table{width:100%;border-collapse:collapse;font-size:15px;margin:14px 0 10px}
+  .law th,.law td{text-align:left;padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .law th{font-weight:500;background:#ecece8}
+  .law a{color:var(--acc)}
+  @media (max-width:700px){.law{overflow-x:auto}.law table{min-width:720px}}
   .status{font-size:13px;color:var(--ink2);margin-bottom:10px}
   .template{border-style:dashed;color:var(--ink2)}
   footer{padding:40px 0;color:var(--ink2);font-size:14px}
@@ -78,6 +84,10 @@
       <a href="#grace">Grace</a>
       <a href="#kat">KAT</a>
       <a href="#afl">AFL</a>
+      <a href="#guardian">Backup Guardian</a>
+      <a href="#passport">Passport</a>
+      <a href="#lopa">Lopapeysa</a>
+      <a href="#law">Law</a>
       <a href="https://gummihurdal.github.io/thel/ideas.html">ÞEL sub-ideas</a>
     </div>
   </div>
@@ -94,6 +104,9 @@
   <table>
     <thead><tr><th>Idea</th><th>Market</th><th>Chance</th><th>Cost, lean · full launch</th><th>Links</th></tr></thead>
     <tbody>
+      <tr><td><a href="#guardian">Backup Guardian</a> — backup health and restore-evidence subscription</td><td>SMEs and MSPs in DACH facing NIS2 and cyber-insurance questionnaires</td><td>6 / 10</td><td>€3k · €6k</td><td><a href="#guardian">Concept</a></td></tr>
+      <tr><td><a href="#passport">Passport</a> — digital product passports for small brands</td><td>Small textile and craft brands selling into the EU, DPP mandatory from about 2028–29</td><td>5 / 10</td><td>€5k · €15k</td><td><a href="#passport">Concept</a></td></tr>
+      <tr><td><a href="#lopa">Lopapeysa</a> — verified authentic Icelandic sweater resale</td><td>US, Japanese and European buyers of hand-knit Icelandic sweaters</td><td>5 / 10</td><td>€3k · €10k</td><td><a href="#lopa">Concept</a></td></tr>
       <tr><td><a href="#thel">ÞEL</a> — luxury label on Icelandic materials</td><td>Luxury natural materials, US and EU; Reykjavík tourists first</td><td>5 / 10</td><td>€79k small start · €346k full</td><td><a href="https://gummihurdal.github.io/thel/">Site</a> · <a href="https://gummihurdal.github.io/thel/business.html">Plan</a> · <a href="https://gummihurdal.github.io/thel/ideas.html">9 sub-ideas</a></td></tr>
       <tr><td><a href="#kat">KAT</a> — autonomous futures and options trading bot</td><td>Own capital first; retail traders buying signals later</td><td>3 / 10</td><td>€8k/yr running · €40k with trading capital</td><td><a href="https://katherina.azurenexus.com">Dashboard</a></td></tr>
       <tr><td><a href="#afl">AFL</a> — Icelandic strength nutrition</td><td>Men 25–50 in strongman, CrossFit and cold-plunge culture, US and Northern Europe</td><td>4 / 10</td><td>€60k · €180k</td><td><a href="#afl">30 products</a></td></tr>
@@ -101,6 +114,100 @@
     </tbody>
   </table>
 </section>
+
+<section id="law" class="law" aria-label="Legal landscape">
+  <h2>The legal landscape that creates these ideas</h2>
+  <p>Three laws and one protected name are changing what small companies must prove between now and 2029. Each one turns a vague good practice into a documented obligation, and documented obligations are what small businesses pay to outsource.</p>
+  <table>
+    <thead><tr><th>Rule</th><th>What it requires</th><th>When</th><th>Idea it creates</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.probackup.io/blog/nis2-backup-requirements">NIS2, Article 21(2)(c)</a></td><td>Business continuity "such as backup management and disaster recovery" as an evidenced control; supply-chain security means even companies below the thresholds get backup questions from customers. Germany applied it from 6 December 2025 with no grace period.</td><td>In force; audits running through 2026–27</td><td>Backup Guardian</td></tr>
+      <tr><td><a href="https://openmetal.io/resources/blog/why-immutable-storage-is-now-a-cyber-insurance-requirement/">Cyber-insurance underwriting</a></td><td>Insurers now check isolated backup credentials, immutable copies and tested restores within the last 90 days with documented results; meeting NIS2 Article 21 passes most questionnaires.</td><td>Every renewal, now</td><td>Backup Guardian</td></tr>
+      <tr><td><a href="https://usbcertification.com/services/textile-and-recycling-certification/textile-digital-product-passport-dpp/">EU Ecodesign Regulation (ESPR) and the Digital Product Passport</a></td><td>A scannable digital record per product with materials, origin, durability, repairability and end-of-life data. The EU passport registry launched 20 July 2026; the textile delegated act is expected in the second half of 2027, with obligations after a roughly 18-month transition.</td><td>Textiles from about 2028–29; furniture, tyres and more follow</td><td>Passport (and the provenance tag ÞEL already planned)</td></tr>
+      <tr><td><a href="https://icelandicstore.is/blogs/icelanders-perspective/the-authentic-icelandic-sweater-lopapeysa">Lopapeysa designation of origin</a></td><td>Since March 2020 a sweater may only be called a lopapeysa if it is hand-knit in Iceland from Icelandic wool with a seamless circular yoke; imports, mostly from China, hold about two thirds of the market and are sold to tourists as the real thing.</td><td>In force</td><td>Lopapeysa resale, verified</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Switzerland is outside NIS2, but Swiss suppliers to EU companies receive the same questionnaires through supply-chain clauses, and Swiss cyber insurers ask the same questions. A Swiss-based service selling into DACH sits on both sides of that line.</p>
+</section>
+
+<article class="idea" id="guardian">
+  <div>
+    <div class="status">Concept · October 2026 · working name Backup Guardian</div>
+    <h2>Backup Guardian — backup health and restore evidence as a subscription</h2>
+    <p>Every company runs backups; almost none can prove it would restore after a ransomware attack. Backup Guardian connects read-only to Veeam, Proxmox Backup, Synology or Azure Backup, collects job results, immutability settings, retention and restore tests, and Claude writes a plain-language monthly report plus alerts. The report is the evidence NIS2 auditors, customers' supply-chain reviews and cyber insurers now ask for.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain">
+      <li><strong>NIS2</strong> names backup management as a required, evidenced control, and supply-chain clauses push the same questions down to small suppliers.</li>
+      <li><strong>Insurers</strong> check for tested restores within 90 days and immutable copies at every renewal.</li>
+      <li><strong>Nobody small has this</strong>: MSPs sell backup, not independent evidence that it works.</li>
+    </ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain">
+      <li><strong>Company plan, €149 a month</strong>: one site, monthly report, alerts, quarterly restore-test attestation.</li>
+      <li><strong>MSP plan, €349 a month</strong>: up to ten client sites, white-label reports.</li>
+      <li><strong>Insurance pack, €490 one-off</strong>: a questionnaire-ready evidence file.</li>
+    </ul>
+    <p>€1,000 a month is four to seven customers. Fifty customers is about €90,000 a year, run in home-office hours. Sales channel: LinkedIn, Swiss and German MSP communities, and insurance brokers who want their clients to pass underwriting.</p>
+    <p class="note">Check your employer's rules on side businesses before the first sale. The "monitored by a central-bank infrastructure specialist" line is only usable if that is allowed.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>SMEs and MSPs in DACH under NIS2 and insurance pressure</strong><small>Hundreds of thousands of Veeam and Proxmox installations in German-speaking Europe alone; most small firms have no independent backup evidence.</small></div>
+    <div><span>Chance of success</span><strong>6 / 10</strong><small>Seven factors: founder fit 8, market 7, economics 7, differentiation 6, regulation 6, key dependency 5, capital and time 4. The dependency is selling, not building.</small><em class="raise">What would raise it substantially: two paying pilot customers from your own network (+2); one insurance broker or cyber insurer who recommends the report (+1); a white-label MSP partner with ten sites (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€3 000 lean · €6 000 full</strong><small>Server, domain, legal terms, liability insurance, a logo and a landing page. Claude Code builds the collector and report generator; the founder's weekends are the main cost.</small></div>
+  </div>
+</article>
+
+<article class="idea" id="passport">
+  <div>
+    <div class="status">Concept · October 2026 · working name Passport</div>
+    <h2>Passport — digital product passports for small brands</h2>
+    <p>The EU will require a scannable Digital Product Passport on textiles and then on most physical products. Enterprise tools cost thousands a month; a maker with 200 products a year cannot buy them. Passport is a €39-a-month service: upload a photo and answer a few questions, and Claude drafts the material, origin, care and repair data in the EU's structure, generates a QR or NFC page per product, and keeps the record for the product's life. It is the same tool ÞEL needs for its provenance tag.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain">
+      <li>The EU passport registry went live on 20 July 2026; the textile act is due in late 2027, with obligations around 2028–29.</li>
+      <li>Early adopters sell on the story before it is mandatory; ÞEL is customer number one.</li>
+      <li>The data model is published, so the product can be built before the act lands and adjusted when it does.</li>
+    </ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain">
+      <li><strong>Maker, €39 a month</strong>: up to 300 products, QR pages, NFC export.</li>
+      <li><strong>Brand, €149 a month</strong>: 3,000 products, batch import, custom domain.</li>
+      <li><strong>Setup, €290</strong>: Claude-assisted data migration from a spreadsheet.</li>
+    </ul>
+    <p>€1,000 a month is about 25 makers, which takes longer to find than seven MSPs: a slower, bigger idea.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>Small textile and craft brands selling into the EU</strong><small>Tens of thousands of small labels; passports become mandatory for textiles around 2028–29, then furniture and more.</small></div>
+    <div><span>Chance of success</span><strong>5 / 10</strong><small>Seven factors: market 7, founder fit 7, regulation 6, economics 6, differentiation 4, key dependency 4, capital and time 4. The dependency is timing: the obligation is still two to three years out, and big platforms may bundle a free passport by then.</small><em class="raise">What would raise it substantially: ten paying makers before the delegated act (+2); a partnership with a marketplace or craft association that bundles Passport for its members (+1); the final textile act matching the data model you built (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€5 000 lean · €15 000 full</strong><small>Hosting, NFC tags for demos, legal terms, a landing page; full adds a part-time designer and marketplace integrations.</small></div>
+  </div>
+</article>
+
+<article class="idea" id="lopa">
+  <div>
+    <div class="status">Concept · October 2026 · working name Lopapeysa</div>
+    <h2>Lopapeysa — verified authentic Icelandic sweater resale</h2>
+    <p>Buy hand-knit Icelandic sweaters from Icelandic knitters, estates and second-hand sources, verify each against the protected-origin criteria, photograph and describe it with Claude in four languages, and sell to the US, Japan and Europe on an own shop plus eBay and Etsy. The simplest buy-and-sell idea here, and the one the law most clearly favours.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain">
+      <li>Since 2020 only sweaters hand-knit in Iceland from Icelandic wool with a seamless circular yoke may be called lopapeysa; about two thirds of those sold to tourists are imports.</li>
+      <li>Buyers abroad cannot tell the difference; a verified-authentic seller can.</li>
+      <li>When textile passports arrive, a passport per sweater is the natural upgrade, and Passport provides it.</li>
+    </ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain">
+      <li><strong>Authentic pre-owned</strong>, €140–220, with a verification note and the knitter's region where known.</li>
+      <li><strong>New, commissioned from Icelandic knitters</strong>, €260–340, made to order in natural colours.</li>
+      <li><strong>Vintage and rare patterns</strong>, €300 and up.</li>
+    </ul>
+    <p>Margins of €40–70 per pre-owned sweater; 20 a month is €1,000. Needs hands, storage and a sourcing contact in Iceland.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>US, Japanese and European buyers of Icelandic sweaters</strong><small>Icelandic sweaters are one of the country's best-known exports; demand abroad is steady and mostly served by imports and tourists' purchases.</small></div>
+    <div><span>Chance of success</span><strong>5 / 10</strong><small>Seven factors: founder fit 7, regulation 7, market 6, differentiation 5, economics 5, key dependency 4, capital and time 3. The dependency is steady sourcing of real hand-knit sweaters at a price that leaves margin.</small><em class="raise">What would raise it substantially: a sourcing agreement with the Handknitting Association or a knitters' cooperative (+2); the first 20 sweaters sold at target margin (+1); a family member or friend in Iceland handling intake and shipping (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€3 000 lean · €10 000 full</strong><small>Starting stock of 15–20 sweaters, photography, shop setup, shipping materials; full adds commissioned production and a Reykjavík intake partner.</small></div>
+  </div>
+</article>
 
 <article class="idea" id="thel">
   <div>
