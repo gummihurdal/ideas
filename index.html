@@ -36,6 +36,19 @@
   .plain strong{color:var(--ink);font-weight:500}
   .h4{font-family:Jost,sans-serif;font-weight:500;font-size:16px;margin:14px 0 4px}
   .note{font-size:14px;color:var(--ink2)}
+  .pouches{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0 10px;max-width:460px}
+  .pouch{aspect-ratio:43/70;border-radius:22px 22px 14px 14px;padding:14px 16px;display:flex;flex-direction:column;box-shadow:0 14px 26px rgba(0,0,0,.22);font-family:Jost,sans-serif}
+  .pouch.dark{background:#1A1917;color:#ECE7DD}
+  .pouch.blue{background:#7FB2C9;color:#1A1917}
+  .pouch .tear{font-size:9px;letter-spacing:.3em;text-align:center;border-bottom:1px dashed currentColor;opacity:.6;padding-bottom:5px;margin-bottom:16px}
+  .pouch .brand{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:52px;line-height:.9;letter-spacing:-.02em}
+  .pouch .line{font-size:11px;opacity:.75;margin-top:6px}
+  .pouch .name{margin-top:auto;font-weight:500;font-size:20px;line-height:1.05}
+  .pouch .flav{font-size:14px;margin-top:3px}
+  .pouch.dark .flav{color:#7FB2C9}
+  .pouch .foot{display:flex;justify-content:space-between;font-size:10px;border-top:1px solid currentColor;opacity:.85;padding-top:8px;margin-top:12px}
+  .pouch .foot i{display:inline-block;width:12px;height:10px;border-radius:50% 50% 45% 45%;background:currentColor;margin-right:5px;vertical-align:middle}
+  @media (max-width:420px){.pouch .brand{font-size:40px}}
   .status{font-size:13px;color:var(--ink2);margin-bottom:10px}
   .template{border-style:dashed;color:var(--ink2)}
   footer{padding:40px 0;color:var(--ink2);font-size:14px}
@@ -181,6 +194,14 @@
       <li><strong>Strongman history series</strong> — short films on Jón Páll's era, the stones and the fishermen, licensed carefully.</li>
       <li><strong>App</strong> — programmes, the stone ladder, cold-exposure log and reorders.</li>
     </ul>
+    <h4 class="h4">Manufacturing</h4>
+    <p>No factory: a licensed EU contract manufacturer (GMP and HACCP certified) formulates, blends, lab-tests and fills under the AFL brand, the same route Grace uses. Minimum orders run from hundreds to a few thousand units per flavour. The Icelandic claim rests on Icelandic grass-fed whey or skyr powder from an Icelandic dairy, shipped to the EU blender; ask every supplier for batch traceability back to the dairy. If Icelandic whey volumes are too small, the honest fallback is skyr cultures and Icelandic ingredients on EU whey, stated plainly on the label.</p>
+    <h4 class="h4">Packaging concept</h4>
+    <div class="pouches" aria-label="Two skyr protein pouches: vanilla in basalt black, bilberry in glacier blue">
+      <div class="pouch dark"><span class="tear">tear here</span><span class="brand">AFL</span><span class="line">Icelandic strength nutrition</span><span class="name">Skyr protein</span><span class="flav">Vanilla</span><span class="foot"><span>30 servings · 900 g</span><span><i></i>Fullsterkur 154 kg</span></span></div>
+      <div class="pouch blue"><span class="tear">tear here</span><span class="brand">AFL</span><span class="line">Icelandic strength nutrition</span><span class="name">Skyr protein</span><span class="flav">Bilberry</span><span class="foot"><span>30 servings · 900 g</span><span><i></i>Hálfsterkur 100 kg</span></span></div>
+    </div>
+    <p class="note">900 g stand-up pouches, matte soft-touch finish. Each flavour carries one of the Dritvík lifting stones and its weight, so buyers collect the set from Amlóði 23 kg to Fullsterkur 154 kg. Custom-printed pouches cost roughly €0.60–1.20 each at 2,000–5,000 units.</p>
     <p class="note">Order of launch: 1 and 2 first (same manufacturer as Grace), then 3, then equipment and the camp once the brand has a following. Apparel waits for ÞEL's materials. Names of living strongmen and the "World's Strongest Man" mark are licensed property; the heritage, places and stones are free to use.</p>
     <p>Shares its EU manufacturer, lab testing and notifications with Grace, so the real cost of adding it as a second brand is lower than the figures suggest. Strongmen's names and likenesses and the "World's Strongest Man" name are licensed property: use the heritage, not the people, unless an ambassador signs.</p>
   </div>
