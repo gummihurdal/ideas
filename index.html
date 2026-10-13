@@ -3,122 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ideas — Gudmundur's business concepts</title>
-<meta name="description" content="Every business idea on one page: the market, an honest chance of success from 0 to 10, and the estimated cost to launch.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Jost:wght@300;400;500&display=swap">
+<title>Ideas — Gudmundur's venture portfolio</title>
+<meta name="description" content="Seven business ideas scored the same way: market, a seven-factor chance of success from 0 to 10, and the cost to find out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600&display=swap">
 <style>
-  html{scroll-padding-top:70px;scroll-behavior:smooth}
-  :root{--bg:#f4f4f1;--card:#fff;--ink:#1a1b19;--ink2:#5c5f5a;--line:#dedfd9;--acc:#2b4d46}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,"Helvetica Neue",Arial,sans-serif;font-weight:300;line-height:1.6;font-size:17px}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-  h1,h2{font-family:Fraunces,Georgia,serif;font-weight:300;line-height:1.05;margin:0 0 .4em;letter-spacing:-.01em}
-  h1{font-size:clamp(40px,7vw,72px)}
-  h2{font-size:30px;font-weight:500}
-  p{margin:0 0 1em;max-width:62ch}
-  header p{color:var(--ink2);font-size:20px}
-  .idea{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
-  .idea .meta{display:grid;gap:14px}
-  .idea .meta div{border-top:1px solid var(--line);padding-top:10px}
-  .idea .meta span{display:block;font-size:13px;color:var(--ink2)}
-  .idea .meta strong{display:block;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:24px;line-height:1.15}
-  .idea .meta small{display:block;font-size:14px;color:var(--ink2);margin-top:4px}
-  .score{display:inline-block;background:var(--acc);color:#fff;border-radius:999px;padding:2px 12px;font-size:14px;font-weight:500;vertical-align:middle;margin-left:8px}
-  .links a{color:var(--acc);font-weight:400;margin-right:16px}
-  .sub{margin:4px 0 0;padding-left:18px;font-size:15px;color:var(--ink2);columns:2;column-gap:24px}
-  .sub li{margin-bottom:4px;break-inside:avoid}
-  .sub a{color:var(--acc)}
-  @media (max-width:700px){.sub{columns:1}}
-  .raise{display:block;font-style:normal;font-size:14px;margin-top:10px;padding:10px 12px;background:#eef2f0;border-left:3px solid var(--acc);color:var(--ink)}
-  .h3{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:20px;margin:12px 0 8px}
-  .plain{padding-left:18px;font-size:15px;color:var(--ink2)}
-  .plain li{margin-bottom:6px}
-  .plain strong{color:var(--ink);font-weight:500}
-  .h4{font-family:Jost,sans-serif;font-weight:500;font-size:16px;margin:14px 0 4px}
-  .note{font-size:14px;color:var(--ink2)}
-  .pouches{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0 10px;max-width:460px}
-  .pouch{aspect-ratio:43/70;border-radius:22px 22px 14px 14px;padding:14px 16px;display:flex;flex-direction:column;box-shadow:0 14px 26px rgba(0,0,0,.22);font-family:Jost,sans-serif}
-  .pouch.dark{background:#1A1917;color:#ECE7DD}
-  .pouch.blue{background:#7FB2C9;color:#1A1917}
-  .pouch .tear{font-size:9px;letter-spacing:.3em;text-align:center;border-bottom:1px dashed currentColor;opacity:.6;padding-bottom:5px;margin-bottom:16px}
-  .pouch .brand{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:52px;line-height:.9;letter-spacing:-.02em}
-  .pouch .line{font-size:11px;opacity:.75;margin-top:6px}
-  .pouch .name{margin-top:auto;font-weight:500;font-size:20px;line-height:1.05}
-  .pouch .flav{font-size:14px;margin-top:3px}
-  .pouch.dark .flav{color:#7FB2C9}
-  .pouch .foot{display:flex;justify-content:space-between;font-size:10px;border-top:1px solid currentColor;opacity:.85;padding-top:8px;margin-top:12px}
-  .pouch .foot i{display:inline-block;width:12px;height:10px;border-radius:50% 50% 45% 45%;background:currentColor;margin-right:5px;vertical-align:middle}
-  @media (max-width:420px){.pouch .brand{font-size:40px}}
-  .law{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px}
-  .law table{width:100%;border-collapse:collapse;font-size:15px;margin:14px 0 10px}
-  .law th,.law td{text-align:left;padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-  .law th{font-weight:500;background:#ecece8}
-  .law a{color:var(--acc)}
-  @media (max-width:700px){.law{overflow-x:auto}.law table{min-width:720px}}
-  .status{font-size:13px;color:var(--ink2);margin-bottom:10px}
-  .template{border-style:dashed;color:var(--ink2)}
-  footer{padding:40px 0;color:var(--ink2);font-size:14px}
-  .top{position:sticky;top:0;z-index:5;background:rgba(244,244,241,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-  .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
-  .top .brand{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:500;text-decoration:none;color:var(--ink)}
-  .top .items{display:flex;flex-wrap:wrap;gap:20px;font-size:16px}
-  .top .items a{text-decoration:none;color:var(--ink)}
-  .top .items a:hover{color:var(--acc)}
-  header{padding:56px 0 24px}
-  .overview{margin-bottom:40px}
-  .overview table{width:100%;border-collapse:collapse;font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .overview th,.overview td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-  .overview th{font-weight:500;background:#ecece8}
-  .overview a{color:var(--acc)}
-  @media (max-width:700px){.overview{overflow-x:auto}.overview table{min-width:640px}}
-  @media (max-width:700px){.idea{grid-template-columns:1fr}}
+:root{--bg:#F4F4F1;--card:#FFFFFF;--ink:#15202B;--ink2:#5C5F5A;--line:#DEDFD9;--navy:#1B3A5C;--navy2:#122A44;--acc:#2B4D46;--amber:#C8781E;--green:#2E7D5B}
+*{box-sizing:border-box}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,"Helvetica Neue",Arial,sans-serif;font-weight:300;line-height:1.6;font-size:17px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(40px,6.5vw,72px)}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+h3{font-size:26px}
+p{margin:0 0 1em;max-width:66ch}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.top{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 24px}
+.top .brand{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:600;text-decoration:none;color:#fff;display:flex;align-items:center;gap:10px}
+.top .brand i{width:12px;height:12px;background:var(--amber);transform:rotate(45deg);display:inline-block}
+.top .items{display:flex;flex-wrap:wrap;gap:18px;font-size:15px}
+.top .items a{text-decoration:none;color:#D9E1EA}
+.top .items a:hover{color:#fff}
+.hero{background:var(--navy);color:#fff;padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:end}
+.hero p{color:#C9D3DD;font-size:20px}
+.hero .eyebrow{font-size:15px;color:#C9D3DD;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stats div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:18px 20px;border-radius:8px}
+.stats strong{display:block;font-family:Fraunces,Georgia,serif;font-size:38px;font-weight:500;line-height:1}
+.stats span{font-size:14px;color:#C9D3DD}
+section{padding:72px 0}
+.lead{max-width:720px;margin-bottom:28px;color:var(--ink2)}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:24px;font-size:15px}
+.controls label{display:flex;align-items:center;gap:8px}
+select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .15s,box-shadow .15s}
+.pcard:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(21,32,43,.08)}
+.ptop{display:flex;gap:14px;align-items:center}
+.ring{width:64px;height:64px;flex:none}
+.tag{display:block;font-size:12px;letter-spacing:.06em;color:var(--ink2);margin-bottom:2px}
+.pcard h3 a{text-decoration:none;color:var(--ink)}
+.pcard .one{margin:0;font-size:16px}
+.pcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px;border-top:1px solid var(--line);padding-top:12px}
+.pcard dt{color:var(--ink2)}
+.pcard dd{margin:0}
+.plinks{margin-top:auto;display:flex;flex-wrap:wrap;gap:14px;font-size:14px;padding-top:6px}
+.plinks a{text-decoration:none;font-weight:400}
+.plinks .more{margin-left:auto;color:var(--amber)}
+.law{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.law table{width:100%;border-collapse:collapse;font-size:15px;margin:14px 0 10px}
+.law th,.law td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.law th{font-weight:500;background:#EEF0ED}
+.law a{color:var(--navy)}
+@media (max-width:760px){.law .scroll{overflow-x:auto}.law table{min-width:760px}}
+.method{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:18px}
+.method div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;font-size:13px}
+.method strong{display:block;font-weight:500;margin-bottom:4px;font-size:14px}
+.details h2{margin-bottom:6px}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;margin-top:26px;display:grid;grid-template-columns:1.25fr 1fr;gap:32px;scroll-margin-top:90px}
+.idea h2{font-size:clamp(26px,3vw,34px)}
+.idea h3,.idea .h3{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:20px;margin:12px 0 8px}
+.idea .h4{font-family:Jost,sans-serif;font-weight:500;font-size:15px;letter-spacing:.04em;margin:16px 0 6px;color:var(--navy)}
+.idea .meta{display:grid;gap:14px;align-content:start;background:#F7F8F5;border-radius:10px;padding:20px}
+.idea .meta div{border-top:1px solid var(--line);padding-top:10px}
+.idea .meta div:first-child{border-top:0;padding-top:0}
+.idea .meta span{display:block;font-size:12px;letter-spacing:.06em;color:var(--ink2)}
+.idea .meta strong{display:block;font-family:Fraunces,Georgia,serif;font-weight:500;font-size:24px;line-height:1.15}
+.idea .meta small{display:block;font-size:14px;color:var(--ink2);margin-top:4px}
+.raise{display:block;font-style:normal;font-size:14px;margin-top:10px;padding:10px 12px;background:#FFF6EA;border-left:3px solid var(--amber);color:var(--ink);border-radius:0 6px 6px 0}
+.status{font-size:13px;color:var(--ink2);margin-bottom:8px}
+.links a{color:var(--navy);font-weight:400;margin-right:16px}
+.plain{padding-left:18px;font-size:15px;color:var(--ink2)}
+.plain li{margin-bottom:6px}
+.plain strong{color:var(--ink);font-weight:500}
+.sub{margin:4px 0 0;padding-left:18px;font-size:15px;color:var(--ink2);columns:2;column-gap:24px}
+.sub li{margin-bottom:4px;break-inside:avoid}
+.note{font-size:14px;color:var(--ink2)}
+.pouches{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0 10px;max-width:460px}
+.pouch{aspect-ratio:43/70;border-radius:22px 22px 14px 14px;padding:14px 16px;display:flex;flex-direction:column;box-shadow:0 14px 26px rgba(0,0,0,.22);font-family:Jost,sans-serif}
+.pouch.dark{background:#1A1917;color:#ECE7DD}
+.pouch.blue{background:#7FB2C9;color:#1A1917}
+.pouch .tear{font-size:9px;letter-spacing:.3em;text-align:center;border-bottom:1px dashed currentColor;opacity:.6;padding-bottom:5px;margin-bottom:16px}
+.pouch .brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:52px;line-height:.9;letter-spacing:-.02em}
+.pouch .line{font-size:11px;opacity:.75;margin-top:6px}
+.pouch .name{margin-top:auto;font-weight:500;font-size:20px;line-height:1.05}
+.pouch .flav{font-size:14px;margin-top:3px}
+.pouch.dark .flav{color:#7FB2C9}
+.pouch .foot{display:flex;justify-content:space-between;font-size:10px;border-top:1px solid currentColor;opacity:.85;padding-top:8px;margin-top:12px}
+.pouch .foot i{display:inline-block;width:12px;height:10px;border-radius:50% 50% 45% 45%;background:currentColor;margin-right:5px;vertical-align:middle}
+footer{background:var(--navy2);color:#C9D3DD;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (max-width:980px){.grid{grid-template-columns:1fr 1fr}.method{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:760px){.hero .wrap,.idea,.grid{grid-template-columns:1fr}.sub{columns:1}.method{grid-template-columns:1fr 1fr}section{padding:52px 0}.idea{padding:22px}}
 </style>
 </head>
 <body>
 <nav class="top" aria-label="Business ideas">
   <div class="wrap">
-    <a class="brand" href="#top">Ideas</a>
+    <a class="brand" href="#top"><i></i>Ideas</a>
     <div class="items">
-      <a href="#overview">Overview</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#law">Law</a>
+      <a href="#method">Method</a>
+      <a href="#guardian">Guardian</a>
       <a href="#thel">ÞEL</a>
       <a href="#grace">Grace</a>
-      <a href="#kat">KAT</a>
-      <a href="#afl">AFL</a>
-      <a href="#guardian">Guardian</a>
       <a href="#passport">Passport</a>
       <a href="#lopa">Lopapeysa</a>
-      <a href="#law">Law</a>
-      <a href="https://gummihurdal.github.io/thel/ideas.html">ÞEL sub-ideas</a>
+      <a href="#afl">AFL</a>
+      <a href="#kat">KAT</a>
     </div>
   </div>
 </nav>
-<header id="top"><div class="wrap">
-  <h1>Ideas</h1>
-  <p>Every business concept, judged the same way: who the market is, an honest chance of success from 0 to 10, and what it would cost to find out. Scores are before any money is spent and move as facts come in.</p>
-</div></header>
 
-<main class="wrap">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">A venture portfolio, scored one way</p>
+      <h1>Seven ideas. One honest method.</h1>
+      <p>Every idea here is judged by the same seven factors, given a chance of success from 0 to 10, and priced for the cheapest test that would prove or kill it. Scores move as evidence arrives, never as enthusiasm does.</p>
+    </div>
+    <div class="stats">
+      <div><strong>7</strong><span>ideas on the board</span></div>
+      <div><strong>4.7</strong><span>average chance of success, out of 10</span></div>
+      <div><strong>6</strong><span>highest score: Guardian</span></div>
+      <div><strong>€3k</strong><span>cheapest test: Lopapeysa</span></div>
+    </div>
+  </div>
+</header>
 
-<section id="overview" class="overview" aria-label="Overview">
-  <h2>Overview</h2>
-  <table>
-    <thead><tr><th>Idea</th><th>Market</th><th>Chance</th><th>Cost, lean · full launch</th><th>Links</th></tr></thead>
-    <tbody>
-      <tr><td><a href="#guardian">Guardian</a> — backup health and restore-evidence subscription</td><td>SMEs and MSPs in DACH facing NIS2 and cyber-insurance questionnaires</td><td>6 / 10</td><td>€3k · €6k</td><td><a href="#guardian">Concept</a></td></tr>
-      <tr><td><a href="#passport">Passport</a> — digital product passports for small brands</td><td>Small textile and craft brands selling into the EU, DPP mandatory from about 2028–29</td><td>5 / 10</td><td>€5k · €15k</td><td><a href="#passport">Concept</a></td></tr>
-      <tr><td><a href="#lopa">Lopapeysa</a> — verified authentic Icelandic sweater resale</td><td>US, Japanese and European buyers of hand-knit Icelandic sweaters</td><td>5 / 10</td><td>€3k · €10k</td><td><a href="#lopa">Concept</a></td></tr>
-      <tr><td><a href="#thel">ÞEL</a> — luxury label on Icelandic materials</td><td>Luxury natural materials, US and EU; Reykjavík tourists first</td><td>5 / 10</td><td>€79k small start · €346k full</td><td><a href="https://gummihurdal.github.io/thel/">Site</a> · <a href="https://gummihurdal.github.io/thel/business.html">Plan</a> · <a href="https://gummihurdal.github.io/thel/ideas.html">9 sub-ideas</a></td></tr>
-      <tr><td><a href="#kat">KAT</a> — autonomous futures and options trading bot</td><td>Own capital first; retail traders buying signals later</td><td>3 / 10</td><td>€8k/yr running · €40k with trading capital</td><td><a href="https://katherina.azurenexus.com">Dashboard</a></td></tr>
-      <tr><td><a href="#afl">AFL</a> — Icelandic strength nutrition</td><td>Men 25–50 in strongman, CrossFit and cold-plunge culture, US and Northern Europe</td><td>4 / 10</td><td>€60k · €180k</td><td><a href="#afl">30 products</a></td></tr>
-      <tr><td><a href="#grace">Grace</a> — midlife wellness company</td><td>Women 45–65 in DE, CH, AT</td><td>5 / 10</td><td>€75k · €165k</td><td><a href="https://gummihurdal.github.io/grace-wellness/">Plan</a> · <a href="https://gummihurdal.github.io/grace-wellness/render.html">3D</a></td></tr>
-    </tbody>
-  </table>
+<main>
+<section id="portfolio">
+  <div class="wrap">
+    <h2>Portfolio</h2>
+    <p class="lead">Each card shows the chance of success, the market, and what it costs to find out. Sort or filter, then open the full analysis.</p>
+    <div class="controls">
+      <label>Sort by <select id="sort"><option value="score">chance of success</option><option value="name">name</option></select></label>
+      <label>Show <select id="filter"><option value="all">all types</option><option value="Service">services</option><option value="SaaS">software</option><option value="Product">products</option><option value="Resale">resale</option><option value="Trading">trading</option></select></label>
+    </div>
+    <div class="grid" id="grid">
+<article class="pcard" data-score="6" data-type="Service">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.3" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">Service · B2B</span><h3><a href="#guardian">Guardian</a></h3></div></div>
+  <p class="one">Backup and exposure evidence for small businesses, monthly.</p>
+  <dl><dt>Market</dt><dd>SMEs and IT providers in DACH under NIS2, insurer and supply-chain pressure</dd><dt>Cost to test · full launch</dt><dd>€4.6k · €13.4k</dd><dt>Scale</dt><dd>€1k/month = 5 customers</dd></dl>
+  <div class="plinks"><a href="https://gummihurdal.github.io/guardian/">Site</a><a href="https://gummihurdal.github.io/guardian/plan.html">Plan</a><a class="more" href="#guardian">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="Product">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">Product · Luxury</span><h3><a href="#thel">ÞEL</a></h3></div></div>
+  <p class="one">A luxury label built on Icelandic materials: þel wool, salmon leather, earth-dyed cloth.</p>
+  <dl><dt>Market</dt><dd>Luxury natural materials, US and EU; Reykjavík tourists first</dd><dt>Cost to test · full launch</dt><dd>€79k · €346k</dd><dt>Scale</dt><dd>Pieces at €220–1,900</dd></dl>
+  <div class="plinks"><a href="https://gummihurdal.github.io/thel/">Site</a><a href="https://gummihurdal.github.io/thel/business.html">Plan</a><a href="https://gummihurdal.github.io/thel/ideas.html">9 sub-ideas</a><a class="more" href="#thel">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="Product">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">Product · Wellness</span><h3><a href="#grace">Grace</a></h3></div></div>
+  <p class="one">A midlife wellness company: six supplements plus a doctor-led programme.</p>
+  <dl><dt>Market</dt><dd>Women 45–65 in Germany, Switzerland and Austria</dd><dt>Cost to test · full launch</dt><dd>€75k · €165k</dd><dt>Scale</dt><dd>€95/month per member</dd></dl>
+  <div class="plinks"><a href="https://gummihurdal.github.io/grace-wellness/">Plan</a><a href="https://gummihurdal.github.io/grace-wellness/render.html">3D</a><a class="more" href="#grace">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="SaaS">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">SaaS · Compliance</span><h3><a href="#passport">Passport</a></h3></div></div>
+  <p class="one">Digital product passports for small brands before the EU makes them mandatory.</p>
+  <dl><dt>Market</dt><dd>Small textile and craft brands selling into the EU</dd><dt>Cost to test · full launch</dt><dd>€5k · €15k</dd><dt>Scale</dt><dd>€1k/month = 25 makers</dd></dl>
+  <div class="plinks"><a class="more" href="#passport">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="Resale">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">Resale · E-commerce</span><h3><a href="#lopa">Lopapeysa</a></h3></div></div>
+  <p class="one">Verified authentic Icelandic sweaters sold to the US, Japan and Europe.</p>
+  <dl><dt>Market</dt><dd>Buyers abroad of hand-knit Icelandic sweaters</dd><dt>Cost to test · full launch</dt><dd>€3k · €10k</dd><dt>Scale</dt><dd>€1k/month = 20 sweaters</dd></dl>
+  <div class="plinks"><a class="more" href="#lopa">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="4" data-type="Product">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 4 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#9A6B45" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="98.0" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">4</text></svg><div><span class="tag">Product · Nutrition</span><h3><a href="#afl">AFL</a></h3></div></div>
+  <p class="one">Icelandic strength nutrition: skyr protein, lifting stones, the cold ritual.</p>
+  <dl><dt>Market</dt><dd>Men 25–50 in strongman, CrossFit and cold-plunge culture</dd><dt>Cost to test · full launch</dt><dd>€60k · €180k</dd><dt>Scale</dt><dd>30 products, 3 at launch</dd></dl>
+  <div class="plinks"><a class="more" href="#afl">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="3" data-type="Trading">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 3 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#8A4B4B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="114.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">3</text></svg><div><span class="tag">Trading · Software</span><h3><a href="#kat">KAT</a></h3></div></div>
+  <p class="one">An autonomous futures and options trading bot, learning from its own trades.</p>
+  <dl><dt>Market</dt><dd>Own capital first; retail signal buyers later</dd><dt>Cost to test · full launch</dt><dd>€8k/yr · €40k</dd><dt>Scale</dt><dd>Paper trading</dd></dl>
+  <div class="plinks"><a href="https://katherina.azurenexus.com">Dashboard</a><a class="more" href="#kat">Full analysis</a></div>
+</article>
+    </div>
+  </div>
 </section>
 
-<section id="law" class="law" aria-label="Legal landscape">
-  <h2>The legal landscape that creates these ideas</h2>
-  <p>Three laws and one protected name are changing what small companies must prove between now and 2029. Each one turns a vague good practice into a documented obligation, and documented obligations are what small businesses pay to outsource.</p>
-  <table>
+<section class="law" id="law">
+  <div class="wrap">
+    <h2>The legal landscape that creates these ideas</h2>
+    <p class="lead">Three laws and one protected name are changing what small companies must prove between now and 2029. Each turns a vague good practice into a documented obligation, and documented obligations are what small businesses pay to outsource.</p>
+    <div class="scroll"><table>
     <thead><tr><th>Rule</th><th>What it requires</th><th>When</th><th>Idea it creates</th></tr></thead>
     <tbody>
       <tr><td><a href="https://www.probackup.io/blog/nis2-backup-requirements">NIS2, Article 21(2)(c)</a></td><td>Business continuity "such as backup management and disaster recovery" as an evidenced control; supply-chain security means even companies below the thresholds get backup questions from customers. Germany applied it from 6 December 2025 with no grace period.</td><td>In force; audits running through 2026–27</td><td>Backup Guardian</td></tr>
@@ -126,10 +205,31 @@
       <tr><td><a href="https://usbcertification.com/services/textile-and-recycling-certification/textile-digital-product-passport-dpp/">EU Ecodesign Regulation (ESPR) and the Digital Product Passport</a></td><td>A scannable digital record per product with materials, origin, durability, repairability and end-of-life data. The EU passport registry launched 20 July 2026; the textile delegated act is expected in the second half of 2027, with obligations after a roughly 18-month transition.</td><td>Textiles from about 2028–29; furniture, tyres and more follow</td><td>Passport (and the provenance tag ÞEL already planned)</td></tr>
       <tr><td><a href="https://icelandicstore.is/blogs/icelanders-perspective/the-authentic-icelandic-sweater-lopapeysa">Lopapeysa designation of origin</a></td><td>Since March 2020 a sweater may only be called a lopapeysa if it is hand-knit in Iceland from Icelandic wool with a seamless circular yoke; imports, mostly from China, hold about two thirds of the market and are sold to tourists as the real thing.</td><td>In force</td><td>Lopapeysa resale, verified</td></tr>
     </tbody>
-  </table>
-  <p class="note">Switzerland is outside NIS2, but Swiss suppliers to EU companies receive the same questionnaires through supply-chain clauses, and Swiss cyber insurers ask the same questions. A Swiss-based service selling into DACH sits on both sides of that line.</p>
+  </table></div>
+    <p class="note">Switzerland is outside NIS2, but Swiss suppliers to EU companies receive the same questionnaires through supply-chain clauses, and Swiss cyber insurers ask the same questions. A Swiss-based service selling into DACH sits on both sides of that line.</p>
+  </div>
 </section>
 
+<section id="method">
+  <div class="wrap">
+    <h2>How every idea is scored</h2>
+    <p class="lead">Seven factors, each 0 to 10, averaged. "Success" means a business that pays its people and still exists in three years. Under every score sits a note on what would raise it, because a score without a lever is just an opinion.</p>
+    <div class="method">
+      <div><strong>Market need</strong>Is there real, growing demand?</div>
+      <div><strong>Differentiation</strong>What can a competitor not copy?</div>
+      <div><strong>Founder fit</strong>Does it use what the founder already does well?</div>
+      <div><strong>Key dependency</strong>The one thing everything rests on, and whether it is proven.</div>
+      <div><strong>Regulatory path</strong>Licences, labels, cross-border rules.</div>
+      <div><strong>Unit economics</strong>Margin and the cost to win a customer.</div>
+      <div><strong>Capital and time</strong>Money needed and the founder's hours.</div>
+    </div>
+  </div>
+</section>
+
+<section class="details">
+  <div class="wrap">
+    <h2>Full analysis</h2>
+    <p class="lead">Every idea in full: concept, why now, offer, market, score, what would raise it, and cost.</p>
 <article class="idea" id="guardian">
   <div>
     <div class="status">Concept with site · October 2026 · Guardian</div>
@@ -157,7 +257,6 @@
     <div><span>Estimated cost</span><strong>€4 600 lean · €13 400 full</strong><small>Server, legal terms incl. authorised-scanning agreement, liability insurance, brand, first marketing. No inventory, no capital at risk: the cheapest idea here to test.</small></div>
   </div>
 </article>
-
 <article class="idea" id="passport">
   <div>
     <div class="status">Concept · October 2026 · working name Passport</div>
@@ -183,7 +282,6 @@
     <div><span>Estimated cost</span><strong>€5 000 lean · €15 000 full</strong><small>Hosting, NFC tags for demos, legal terms, a landing page; full adds a part-time designer and marketplace integrations.</small></div>
   </div>
 </article>
-
 <article class="idea" id="lopa">
   <div>
     <div class="status">Concept · October 2026 · working name Lopapeysa</div>
@@ -209,7 +307,6 @@
     <div><span>Estimated cost</span><strong>€3 000 lean · €10 000 full</strong><small>Starting stock of 15–20 sweaters, photography, shop setup, shipping materials; full adds commissioned production and a Reykjavík intake partner.</small></div>
   </div>
 </article>
-
 <article class="idea" id="thel">
   <div>
     <div class="status">Concept · October 2026 · brand name ÞEL</div>
@@ -234,7 +331,6 @@
     <div><span>Estimated cost</span><strong>€79 000 small first collection · €346 000 full launch</strong><small>Three to five pieces funded by pre-orders; the full launch adds a designer, a Reykjavík pop-up and marketing.</small></div>
   </div>
 </article>
-
 <article class="idea" id="kat">
   <div>
     <div class="status">Live project · paper trading · October 2026</div>
@@ -248,7 +344,6 @@
     <div><span>Estimated cost</span><strong>€8 000 a year running · €40 000 with capital</strong><small>Server, market data, signal subscriptions and broker fees of roughly €8 000 a year; plus €30 000 or more of trading capital at risk once it goes live, which must be treated as money that can be lost.</small></div>
   </div>
 </article>
-
 <article class="idea" id="afl">
   <div>
     <div class="status">Concept · October 2026 · working names AFL, Sterkur, Jötunn</div>
@@ -319,7 +414,6 @@
     <div><span>Estimated cost</span><strong>€60 000 lean · €180 000 full · €400 000 whole line</strong><small>Lean: the three starred products, EU private-label manufacturing, labelling, small launch. Full: families 1 to 3, an ambassador fee and real marketing. Whole line adds equipment tooling and the camp. Minimum orders often run 1,000 units per flavour.</small></div>
   </div>
 </article>
-
 <article class="idea" id="grace">
   <div>
     <div class="status">Concept · October 2026 · working name Grace</div>
@@ -333,22 +427,32 @@
     <div><span>Estimated cost</span><strong>€75 000 lean · €165 000 full</strong><small>Two products, program live, one country; or all six SKUs with a larger run and launch budget.</small></div>
   </div>
 </article>
-
-<article class="idea template">
-  <div>
-    <div class="status">Template for the next one</div>
-    <h2>Name — one line on what it is</h2>
-    <p>Two or three sentences: who it serves, what it sells, and the one thing a competitor can't easily copy. Link to the site and the plan.</p>
   </div>
-  <div class="meta">
-    <div><span>Market</span><strong>Who, where, how many</strong><small>Size it with a number, however rough.</small></div>
-    <div><span>Chance of success</span><strong>n / 10</strong><small>Score it before money is spent, and say what would move it.</small></div>
-    <div><span>Estimated cost</span><strong>€ lean · € full</strong><small>Cheapest honest test, and the real launch.</small></div>
-  </div>
-</article>
-
+</section>
 </main>
 
-<footer><div class="wrap">All figures are planning estimates, not quotes or offers. Scores are the founder's own honest assessment and are revised as facts arrive.</div></footer>
+<footer>
+  <div class="wrap">
+    <span>Ideas — Gudmundur's venture portfolio</span>
+    <span>All figures are planning estimates, not quotes or offers. Scores are the founder's honest assessment and move with evidence.</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var grid=document.getElementById('grid'),sort=document.getElementById('sort'),filter=document.getElementById('filter');
+  function apply(){
+    var cards=Array.prototype.slice.call(grid.querySelectorAll('.pcard'));
+    cards.sort(function(a,b){
+      if(sort.value==='name') return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+      return (+b.dataset.score)-(+a.dataset.score);
+    });
+    cards.forEach(function(c){
+      c.style.display=(filter.value==='all'||c.dataset.type===filter.value)?'':'none';
+      grid.appendChild(c);
+    });
+  }
+  sort.addEventListener('change',apply);filter.addEventListener('change',apply);
+})();
+</script>
 </body>
 </html>
