@@ -61,6 +61,8 @@ select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:
 .law th{font-weight:500;background:#EEF0ED}
 .law a{color:var(--navy)}
 @media (max-width:760px){.law .scroll{overflow-x:auto}.law table{min-width:760px}}
+.idea .scroll{overflow-x:auto;margin:10px 0 6px}.idea table{width:100%;border-collapse:collapse;font-size:14px}.idea th,.idea td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid var(--line)}.idea th{font-weight:500;color:var(--ink2)}
+@media (max-width:760px){.idea table{min-width:620px}}
 .method{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:18px}
 .method div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;font-size:13px}
 .method strong{display:block;font-weight:500;margin-bottom:4px;font-size:14px}
@@ -117,7 +119,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <a href="#lopa">Lopapeysa</a>
       <a href="#afl">AFL</a>
       <a href="#kat">KAT</a>
-      <a href="#katschool">KAT School</a>
+      <a href="#universe">KAT Universe</a>
       <a href="#cra">CRA Desk</a>
       <a href="#paygap">PayGap</a>
       <a href="#aiaudit">AI Audit</a>
@@ -235,10 +237,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <div class="plinks"><a class="more" href="#frontdesk">Full analysis</a></div>
 </article>
 <article class="pcard" data-score="3" data-type="Media">
-  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 3 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#8A4B4B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="114.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">3</text></svg><div><span class="tag">Education · Software</span><h3><a href="#katschool">KAT School</a></h3></div></div>
-  <p class="one">The trading school that publishes its failures: simulator, chart school and an honest track record. Sold only once it has proven itself.</p>
-  <dl><dt>Market</dt><dd>Beginners starting to trade; nothing sold before the gates pass</dd><dt>Cost to test · full launch</dt><dd>€1k · €7.5k</dd><dt>Scale</dt><dd>€3k/month ≈ 120 members at €25</dd></dl>
-  <div class="plinks"><a href="https://katherina.azurenexus.com">Platform</a><a class="more" href="#katschool">Full analysis</a></div>
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 3 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#8A4B4B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="114.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">3</text></svg><div><span class="tag">Education · Software</span><h3><a href="#universe">KAT Trading Universe</a></h3></div></div>
+  <p class="one">Everything a beginner needs to start trading stocks, options and futures: ask any question and get an honest answer from 15 years of data, learn, practise in simulators, and watch a disciplined engine think. Offered only once it has proven itself.</p>
+  <dl><dt>Market</dt><dd>People starting to trade who are confused by how complex it is</dd><dt>Cost to test · full launch</dt><dd>€1k · €10k</dd><dt>Scale</dt><dd>€3k/month ≈ 120 members at €25</dd></dl>
+  <div class="plinks"><a href="https://katherina.azurenexus.com">Platform</a><a class="more" href="#universe">Full analysis</a></div>
 </article>
 <article class="pcard" data-score="6" data-type="Service">
   <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">Service · B2B</span><h3><a href="#restore">Restore Proof</a></h3></div></div>
@@ -412,32 +414,60 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div><span>Estimated cost</span><strong>€8 000 a year running · €40 000 with capital</strong><small>Server, market data, signal subscriptions and broker fees of roughly €8 000 a year; plus €30 000 or more of trading capital at risk once it goes live, which must be treated as money that can be lost.</small></div>
   </div>
 </article>
-<article class="idea" id="katschool">
+<article class="idea" id="universe">
   <div>
-    <div class="status">Concept · 14 October 2026 · working name KAT School · nothing is sold until it has proven itself</div>
-    <h2>KAT School — the trading school that publishes its failures</h2>
-    <p>Trading-education rooms sell hope. The Traveling Trader has about 300,000 YouTube subscribers and charges $49–129 a month, with no audited track record, and his members pay mainly for a daily companion and a community. KAT already has what beginners actually need and rarely get: a simulator with real contracts, real fills and server-side stops; a Chart School and Academy; risk rules that work (a daily kill switch, asset-preservation mode, a cost limit); a scored daily pre-market brief; and a public ledger of every pre-registered test, including the ones that failed. Nobody else shows beginners what does not work. The founder's rule: no subscription is offered until KAT is a success story for its owners <em>and</em> it demonstrably helps people.</p>
-    <h4 class="h4">What success must mean before anything is offered</h4>
+    <div class="status">Concept · 14 October 2026 · KAT Trading Universe · nothing is offered until it has proven itself and demonstrably helps people</div>
+    <h2>KAT Trading Universe — the most valuable place to start trading</h2>
+    <p>Someone starting to trade meets a wall: stocks, options, futures, margin, ticks, stops, a thousand strategies and a thousand loud people selling certainty. The Traveling Trader shows the demand: about 300,000 YouTube subscribers, a Discord since 2017, $49–129 a month, no audited record. His members pay for a daily companion, a community and alerts that feel like an edge. KAT Trading Universe offers what no single personality can: <strong>an honest, data-backed answer to any trading question, at any hour</strong>, a guided path through every market, simulators that behave like the real thing, and a disciplined engine that explains every decision, including the trades it refused and the tests that failed.</p>
+
+    <h4 class="h4">Learn from the Traveling Trader, then go further</h4>
+    <div class="scroll"><table>
+      <thead><tr><th>What he does well</th><th>Why it works</th><th>Our version, and how we go further</th></tr></thead>
+      <tbody>
+        <tr><td>Live every day at the open</td><td>A beginner is never alone at the scariest moment</td><td>A daily companion: morning brief in plain language at 07:40 CT, the engine "thinking aloud" through the open, an evening review of the day in charts, and Matt live once a week</td></tr>
+        <tr><td>A community that belongs together</td><td>Belonging keeps people coming back</td><td>Small cohorts that start together, a leaderboard for discipline rather than profit, and moderated discussion of real simulator trades</td></tr>
+        <tr><td>A patient teacher</td><td>People forgive complexity when someone explains it kindly</td><td>Chart School plus a coach that reviews every practice trade in plain words: your stop, your size, your plan, and what happened next</td></tr>
+        <tr><td>Stocks, options, futures in one place</td><td>One home instead of five apps</td><td>Three learning paths with their own simulators: stocks (trend and growth), options (spreads and risk graphs), futures (micros, ticks, margin)</td></tr>
+        <tr><td>A free door in: free Discord and newsletter</td><td>Trust before payment</td><td>Free for good: the morning brief, the library of what does not work, and a few Ask KAT questions a week</td></tr>
+        <tr><td>Alerts give members something to do</td><td>Action feels like progress</td><td>Daily simulator challenges and the engine's live decisions as practice, never as calls to copy</td></tr>
+        <tr><td><em>What he does not offer</em></td><td></td><td><strong>An audited track record, tested answers, risk rules that protect beginners, and honesty about failure.</strong> That is our ground.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4 class="h4">The seven pillars</h4>
     <ul class="plain">
-      <li><strong>Each trading engine:</strong> at least 12 months forward on paper with real broker fills (300+ intraday trades or 250 trading days), then 6+ months live at the smallest size. Positive after commissions and real slippage, t ≥ 2, ahead of a benchmark set in advance; worst drawdown at most twice what was expected; no day worse than −3 %. Read-only broker statements and an append-only ledger, reviewed by someone outside the team. Any rule change restarts that engine's clock.</li>
-      <li><strong>Teaching:</strong> at least 20 learners finish Chart School plus a 12-week simulator path; test scores rise; simulator discipline improves (every trade with a stop, size within limits, fewer rule breaks); 60 % still active after three months; half say they would pay €20–30 a month.</li>
-      <li><strong>Where it stands today:</strong> no engine is close. Intraday futures lose about $3.60 a signal after costs over 506 signals; options and the trend portfolio are paper only. The teaching gate is the one that can pass first.</li>
+      <li><strong>1. Ask KAT.</strong> Type any idea ("buy the pullback just before the 30-minute close", "is the CPI move a sure bet?", "should I add to winners?") and get a plain answer from 15 years of minute data: does it work, how often, after costs, and why. Built from the tests KAT already runs; on 14 October five such questions were answered in minutes each.</li>
+      <li><strong>2. Why did the engine do that?</strong> Every engine decision explained live: what it saw, which rule allowed or blocked it, what happened next. Beginners learn by watching a disciplined process think.</li>
+      <li><strong>3. Learning paths for stocks, options and futures.</strong> Short lessons, each ending in a simulator task, from "what is a tick" to building and testing a first strategy.</li>
+      <li><strong>4. Simulators that behave like the real thing</strong>: real contracts and prices, realistic fills, server-side stops, with a coach after every trade.</li>
+      <li><strong>5. Training wheels.</strong> The risk rules KAT learned the hard way, built into every account: daily loss limit, one trade at a time at the open, a profit lock that switches to careful mode, a cost check before every trade.</li>
+      <li><strong>6. The library of what does not work.</strong> Every failed test as a two-minute lesson with its data: chasing CPI moves, adding to winners, wider stops, trend-day rules.</li>
+      <li><strong>7. A track record, and signals only when earned.</strong> Every engine's forward results after costs, published with its failures. Signals are shown only for an engine that has passed its 12-month gate, with its full record beside every call, and only if they demonstrably help people.</li>
     </ul>
-    <h4 class="h4">Project plan, October 2026 – October 2027 (nothing sold)</h4>
+
+    <h4 class="h4">Project plan, November 2026 – October 2027 (nothing offered for sale)</h4>
     <ul class="plain">
-      <li><strong>Oct–Nov 2026 · Gates and Track Record.</strong> Write the success gates with Matt, dated, with a 12-month clock. Build a Track Record page from the strategy book: every engine forward, after costs, expectation beside result, with the failure ledger visible.</li>
-      <li><strong>Nov 2026–Jan 2027 · Simulator class mode.</strong> Student accounts, tasks tied to Chart School lessons, a leaderboard on discipline rather than profit, a trade journal. First cohort: Katherina and up to ten students. Pre- and post-tests start.</li>
-      <li><strong>Feb–Apr 2027 · The human trader.</strong> Matt's real trades go into the same honest ledger, with a weekly live review of learners' simulator trades. He teaches and never calls trades. The pre-market brief becomes the learners' daily read. Learner dashboard live.</li>
-      <li><strong>May–Sep 2027 · Prove it.</strong> Second cohort, 20+ learners in total. Engines run forward under frozen rules. A public page shows the track record and the failures, with a waiting list and no prices.</li>
-      <li><strong>Oct 2027 · Decide.</strong> Gates passed: consider a subscription (around €25 a month: simulator, school, track record, weekly review), with written employer clearance first. Gates failed: it stays a private tool, and the failure is published like every other test.</li>
+      <li><strong>Phase 1 · Nov–Dec 2026 · The honest core.</strong> Ask KAT v1 for Gudmundur and Matt; the engine decision explainer; the Track Record page and the failure library; success gates written with Matt and dated.</li>
+      <li><strong>Phase 2 · Jan–Mar 2027 · Learning paths and simulators.</strong> Futures path first (the engine's home), then options and stocks; simulator class mode with student accounts, lesson tasks, a trade journal and the coach; training-wheel accounts. First cohort: Katherina and up to ten students, tested before and after.</li>
+      <li><strong>Phase 3 · Apr–Jun 2027 · The daily companion.</strong> Plain-language morning brief and evening review for learners; daily simulator challenges; Matt's weekly live review; cohort community; a strategy lab where learners test their own ideas through Ask KAT.</li>
+      <li><strong>Phase 4 · Jul–Sep 2027 · Prove it.</strong> Second cohort, 20+ learners in total; outcomes measured; engines run forward under frozen rules; a public page with the track record, the failures and a waiting list, no prices.</li>
+      <li><strong>Decision · Oct 2027.</strong> Gates passed and learners demonstrably helped: design the offer, with a free tier that stays free and a fair price (around €25 a month). Gates failed: it stays our own tool, and the failure is published like every other test.</li>
     </ul>
-    <h4 class="h4">Never, at any stage</h4>
-    <ul class="plain"><li>Selling trade signals or calls, or auto-trading other people's accounts: regulated in Switzerland (FinSA/FinIA), the EU (MiFID II, ESMA 2026 warning) and the US (CFTC/NFA for futures), and KAT has no proven edge to sell.</li><li>Profit or income claims in any marketing.</li><li>Redistributing licensed market data without the vendor's permission.</li></ul>
+
+    <h4 class="h4">Success gates before anything is offered</h4>
+    <ul class="plain">
+      <li><strong>Teaching:</strong> 20+ learners finish a path; test scores rise; simulator discipline improves (stops on every trade, size within limits, fewer rule breaks); 60 % still active after three months; half say they would pay €20–30 a month.</li>
+      <li><strong>Each trading engine shown with results:</strong> 12+ months forward on paper with real fills (300+ intraday trades or 250 trading days), then 6+ months live at the smallest size; positive after costs, t ≥ 2, ahead of a pre-set benchmark; drawdown within twice the expectation; independently checked. Any rule change restarts that engine's clock.</li>
+      <li><strong>Today:</strong> no engine is near its gate (intraday futures lose about $3.60 a signal after costs). The teaching gate can pass first.</li>
+    </ul>
+
+    <h4 class="h4">Never</h4>
+    <ul class="plain"><li>Profit or income promises.</li><li>Calls from an engine without a proven record, or trading other people's accounts.</li><li>Hiding a failed test.</li><li>Redistributing licensed market data without the vendor's permission. Rules follow the customer's country, wherever the company is registered; this is settled before any offer.</li></ul>
   </div>
   <div class="meta">
-    <div><span>Market</span><strong>People starting to trade</strong><small>A large market dominated by personality-led rooms and alert services; Topstep sells evaluations, TradingView sells charts. An honest school with a verified record is unoccupied ground.</small></div>
-    <div><span>Chance of success</span><strong>3 / 10 in 12 months · 6 / 10 over 2–2½ years</strong><small>Seven factors: differentiation 7, founder fit 7, regulation 6 (education only), market 6, economics 4, capital and time 3, key dependency 2. The dependency is an audience and measured learner results; neither exists yet, against an incumbent with nine years and 300,000 followers. €3,000 a month needs about 120 paying members.</small><em class="raise">What would raise it substantially: the teaching gate passing with 20+ learners (+2); Matt's verified trading record running in the ledger (+1); 200 names on the waiting list without paid ads (+1); any KAT engine passing its 12-month forward gate (+2).</em></div>
-    <div><span>Estimated cost</span><strong>€1 000 to test · €7 500 in total</strong><small>The platform exists. The test is the public Track Record page plus one simulator demo (about 20 hours of work, near €0) and a waiting list measured for eight weeks. Full: class mode, learner measurement, video, data-licence review and legal check before any sale.</small></div>
+    <div><span>Market</span><strong>People starting to trade, worldwide</strong><small>Huge and noisy: personality-led rooms and alert services, Topstep selling evaluations, TradingView selling charts. Nobody combines tested answers, guided learning, realistic simulators and a public record of failures.</small></div>
+    <div><span>Chance of success</span><strong>3 / 10 in 12 months · 6 / 10 over 2–2½ years</strong><small>Seven factors: differentiation 8, founder fit 7, market 6, regulation 6, economics 4, capital and time 3, key dependency 2. The dependency is an audience and measured learner results; neither exists yet, against an incumbent with nine years and 300,000 followers. About 120 paying members make €3,000 a month.</small><em class="raise">What would raise it substantially: Ask KAT used weekly by the first cohort (+1); the teaching gate passing with 20+ learners (+2); 200 names on the waiting list without paid ads (+1); Matt's verified record in the ledger (+1); any KAT engine passing its 12-month forward gate (+2).</em></div>
+    <div><span>Estimated cost</span><strong>€1 000 to test · €10 000 in total</strong><small>The platform, data and simulators exist. The test is Ask KAT v1 and the public track record (about 30 hours, near €0). Full: three learning paths, simulator class mode, coach, video, data-licence and legal review before any offer.</small></div>
   </div>
 </article>
 <article class="idea" id="afl">
