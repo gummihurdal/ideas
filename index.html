@@ -117,6 +117,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <a href="#lopa">Lopapeysa</a>
       <a href="#afl">AFL</a>
       <a href="#kat">KAT</a>
+      <a href="#cra">CRA Desk</a>
+      <a href="#paygap">PayGap</a>
+      <a href="#aiaudit">AI Audit</a>
+      <a href="#scamshield">Scam Shield</a>
+      <a href="#briefing">Briefing</a>
+      <a href="#frontdesk">Front Desk</a>
+      <a href="#restore">Restore Proof</a>
+      <a href="#legacy">Legacy Vault</a>
     </div>
   </div>
 </nav>
@@ -125,14 +133,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <div class="wrap">
     <div>
       <p class="eyebrow">A venture portfolio, scored one way</p>
-      <h1>Seven ideas. One honest method.</h1>
+      <h1>Fifteen ideas. One honest method.</h1>
       <p>Every idea here is judged by the same seven factors, given a chance of success from 0 to 10, and priced for the cheapest test that would prove or kill it. Scores move as evidence arrives, never as enthusiasm does.</p>
     </div>
     <div class="stats">
-      <div><strong>7</strong><span>ideas on the board</span></div>
-      <div><strong>4.7</strong><span>average chance of success, out of 10</span></div>
-      <div><strong>6</strong><span>highest score: Guardian</span></div>
-      <div><strong>€3k</strong><span>cheapest test: Lopapeysa</span></div>
+      <div><strong>15</strong><span>ideas on the board</span></div>
+      <div><strong>5.1</strong><span>average chance of success, out of 10</span></div>
+      <div><strong>6</strong><span>highest: Guardian, CRA Desk, PayGap, Scam Shield, Restore Proof</span></div>
+      <div><strong>€500</strong><span>cheapest test: Briefing</span></div>
     </div>
   </div>
 </header>
@@ -144,7 +152,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <p class="lead">Each card shows the chance of success, the market, and what it costs to find out. Sort or filter, then open the full analysis.</p>
     <div class="controls">
       <label>Sort by <select id="sort"><option value="score">chance of success</option><option value="name">name</option></select></label>
-      <label>Show <select id="filter"><option value="all">all types</option><option value="Service">services</option><option value="SaaS">software</option><option value="Product">products</option><option value="Resale">resale</option><option value="Trading">trading</option></select></label>
+      <label>Show <select id="filter"><option value="all">all types</option><option value="Service">services</option><option value="SaaS">software</option><option value="Product">products</option><option value="Resale">resale</option><option value="Trading">trading</option><option value="Media">media</option></select></label>
     </div>
     <div class="grid" id="grid">
 <article class="pcard" data-score="6" data-type="Service">
@@ -189,6 +197,54 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <dl><dt>Market</dt><dd>Own capital first; retail signal buyers later</dd><dt>Cost to test · full launch</dt><dd>€8k/yr · €40k</dd><dt>Scale</dt><dd>Paper trading</dd></dl>
   <div class="plinks"><a href="https://katherina.azurenexus.com">Dashboard</a><a class="more" href="#kat">Full analysis</a></div>
 </article>
+<article class="pcard" data-score="6" data-type="Service">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">Service · Compliance</span><h3><a href="#cra">CRA Desk</a></h3></div></div>
+  <p class="one">24-hour vulnerability and incident reporting, done for small makers of digital products.</p>
+  <dl><dt>Market</dt><dd>EU makers of software and connected products under 50 staff</dd><dt>Cost to test · full launch</dt><dd>€3k · €5k</dd><dt>Scale</dt><dd>€1k/month = 7 customers</dd></dl>
+  <div class="plinks"><a class="more" href="#cra">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="6" data-type="SaaS">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">SaaS · HR compliance</span><h3><a href="#paygap">PayGap</a></h3></div></div>
+  <p class="one">Payroll export in, compliant gender-pay-gap report out, for mid-size DACH firms.</p>
+  <dl><dt>Market</dt><dd>Companies with 100+ employees in Germany, Austria and Switzerland</dd><dt>Cost to test · full launch</dt><dd>€5k · €8k</dd><dt>Scale</dt><dd>€1k/month = 25 firms</dd></dl>
+  <div class="plinks"><a class="more" href="#paygap">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="Service">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">Service · Compliance</span><h3><a href="#aiaudit">AI Audit</a></h3></div></div>
+  <p class="one">A fixed-price AI-transparency audit and two-hour literacy training for small firms.</p>
+  <dl><dt>Market</dt><dd>SMEs with a chatbot, generated content or AI in hiring</dd><dt>Cost to test · full launch</dt><dd>€2k · €4k</dd><dt>Scale</dt><dd>€1k/month = 1 audit</dd></dl>
+  <div class="plinks"><a class="more" href="#aiaudit">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="6" data-type="Service">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">Service · Consumer</span><h3><a href="#scamshield">Scam Shield</a></h3></div></div>
+  <p class="one">Fraud protection for seniors, sold to their adult children, with a police-trained founder.</p>
+  <dl><dt>Market</dt><dd>Swiss residents over 65 and their families</dd><dt>Cost to test · full launch</dt><dd>€3k · €8k</dd><dt>Scale</dt><dd>€1k/month = 35 households</dd></dl>
+  <div class="plinks"><a class="more" href="#scamshield">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="Media">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">Media · Compliance</span><h3><a href="#briefing">Briefing</a></h3></div></div>
+  <p class="one">A paid German-language briefing telling Swiss exporters which EU rules hit them next.</p>
+  <dl><dt>Market</dt><dd>Swiss SMEs selling into the EU</dd><dt>Cost to test · full launch</dt><dd>€0.5k · €2k</dd><dt>Scale</dt><dd>€1k/month = 55 subscribers</dd></dl>
+  <div class="plinks"><a class="more" href="#briefing">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="5" data-type="SaaS">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 5 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C8781E" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="81.7" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">5</text></svg><div><span class="tag">SaaS · Tourism</span><h3><a href="#frontdesk">Front Desk</a></h3></div></div>
+  <p class="one">An Icelandic- and English-speaking booking and FAQ assistant for small tourism operators.</p>
+  <dl><dt>Market</dt><dd>Guesthouses, tour and rental companies in Iceland</dd><dt>Cost to test · full launch</dt><dd>€4k · €12k</dd><dt>Scale</dt><dd>€1k/month = 12 properties</dd></dl>
+  <div class="plinks"><a class="more" href="#frontdesk">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="6" data-type="Service">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 6 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#2E7D5B" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="65.4" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">6</text></svg><div><span class="tag">Service · B2B</span><h3><a href="#restore">Restore Proof</a></h3></div></div>
+  <p class="one">Quarterly, documented restore tests with a signed report, for SMEs and their IT providers.</p>
+  <dl><dt>Market</dt><dd>SMEs and MSPs in DACH asked for restore evidence</dd><dt>Cost to test · full launch</dt><dd>€2k · €6k</dd><dt>Scale</dt><dd>€1k/month = 4 customers</dd></dl>
+  <div class="plinks"><a class="more" href="#restore">Full analysis</a></div>
+</article>
+<article class="pcard" data-score="4" data-type="SaaS">
+  <div class="ptop"><svg class="ring" viewBox="0 0 64 64" role="img" aria-label="Chance of success 4 of 10"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6E8E3" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#9A6B45" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="98.0" stroke-linecap="round" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="18" font-weight="600" fill="#15202B">4</text></svg><div><span class="tag">SaaS · Consumer</span><h3><a href="#legacy">Legacy Vault</a></h3></div></div>
+  <p class="one">A guided inventory of someone's digital life, sealed instructions, and verified release when they die.</p>
+  <dl><dt>Market</dt><dd>Anyone over 50 with assets and accounts online</dd><dt>Cost to test · full launch</dt><dd>€6k · €20k</dd><dt>Scale</dt><dd>€1k/month = 85 users</dd></dl>
+  <div class="plinks"><a class="more" href="#legacy">Full analysis</a></div>
+</article>
     </div>
   </div>
 </section>
@@ -196,7 +252,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <section class="law" id="law">
   <div class="wrap">
     <h2>The legal landscape that creates these ideas</h2>
-    <p class="lead">Three laws and one protected name are changing what small companies must prove between now and 2029. Each turns a vague good practice into a documented obligation, and documented obligations are what small businesses pay to outsource.</p>
+    <p class="lead">Six laws and one protected name are changing what small companies must prove between now and 2029. Each turns a vague good practice into a documented obligation, and documented obligations are what small businesses pay to outsource.</p>
     <div class="scroll"><table>
     <thead><tr><th>Rule</th><th>What it requires</th><th>When</th><th>Idea it creates</th></tr></thead>
     <tbody>
@@ -204,6 +260,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <tr><td><a href="https://openmetal.io/resources/blog/why-immutable-storage-is-now-a-cyber-insurance-requirement/">Cyber-insurance underwriting</a></td><td>Insurers now check isolated backup credentials, immutable copies and tested restores within the last 90 days with documented results; meeting NIS2 Article 21 passes most questionnaires.</td><td>Every renewal, now</td><td>Backup Guardian</td></tr>
       <tr><td><a href="https://usbcertification.com/services/textile-and-recycling-certification/textile-digital-product-passport-dpp/">EU Ecodesign Regulation (ESPR) and the Digital Product Passport</a></td><td>A scannable digital record per product with materials, origin, durability, repairability and end-of-life data. The EU passport registry launched 20 July 2026; the textile delegated act is expected in the second half of 2027, with obligations after a roughly 18-month transition.</td><td>Textiles from about 2028–29; furniture, tyres and more follow</td><td>Passport (and the provenance tag ÞEL already planned)</td></tr>
       <tr><td><a href="https://icelandicstore.is/blogs/icelanders-perspective/the-authentic-icelandic-sweater-lopapeysa">Lopapeysa designation of origin</a></td><td>Since March 2020 a sweater may only be called a lopapeysa if it is hand-knit in Iceland from Icelandic wool with a seamless circular yoke; imports, mostly from China, hold about two thirds of the market and are sold to tourists as the real thing.</td><td>In force</td><td>Lopapeysa resale, verified</td></tr>
+      <tr><td><a href="https://www.surecloud.com/blog-hub/eu-cyber-resilience-act-timeline">Cyber Resilience Act</a></td><td>Any product with digital elements sold in the EU must report actively exploited vulnerabilities and severe incidents within 24 hours; from 11 December 2027 every new product needs security by design, a conformity assessment and CE marking. Products already on the market are exempt from the design rules but not from reporting.</td><td>Reporting live since 11 Sep 2026; full 11 Dec 2027</td><td>CRA Desk, Briefing</td></tr>
+      <tr><td><a href="https://www.complyjet.com/blog/eu-ai-act-compliance-guide">EU AI Act</a></td><td>AI-literacy duty for every company using AI since February 2025; transparency duties (chatbot disclosure, labelled generated content) and enforcement since 2 August 2026; high-risk rules for AI in hiring, credit and education from 2 December 2027 after the Digital Omnibus delay.</td><td>In force; high-risk 2 Dec 2027</td><td>AI Audit, Briefing</td></tr>
+      <tr><td><a href="https://regdossier.eu/eu-compliance-deadlines/">Pay Transparency Directive</a></td><td>Employers with 100 or more staff must report their gender pay gap and justify any gap above 5%; workers gain a right to pay information. Member states transpose by 19 March 2027, first reports follow in 2027.</td><td>Transposition 19 Mar 2027</td><td>PayGap</td></tr>
     </tbody>
   </table></div>
     <p class="note">Switzerland is outside NIS2, but Swiss suppliers to EU companies receive the same questionnaires through supply-chain clauses, and Swiss cyber insurers ask the same questions. A Swiss-based service selling into DACH sits on both sides of that line.</p>
@@ -427,6 +486,142 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
     <div><span>Market</span><strong>Women 45–65 in German-speaking Europe</strong><small>About 14 million women in the age band across DE, CH and AT; care is thin, doctor-led programs rare.</small></div>
     <div><span>Chance of success</span><strong>5 / 10</strong><small>A 3 as a supplement brand alone; the program lifts it to 5; a confirmed physician and a successful pilot lift it to 6–7.</small><em class="raise">What would raise it substantially: Dr. Alina confirmed in writing, with the telehealth licensing checked (+2); a 12-woman pilot where most come back for week four (+1); organic signups below €40 per customer (+1); a pharmacy or practitioner channel in Switzerland (+1).</em></div>
     <div><span>Estimated cost</span><strong>€75 000 lean · €165 000 full</strong><small>Two products, program live, one country; or all six SKUs with a larger run and launch budget.</small></div>
+  </div>
+</article>
+<article class="idea" id="cra">
+  <div>
+    <div class="status">Concept · October 2026 · working name CRA Desk</div>
+    <h2>CRA Desk — Cyber Resilience Act reporting for small product makers</h2>
+    <p>Since 11 September 2026 anyone placing a product with digital elements on the EU market must report an actively exploited vulnerability or a severe incident within 24 hours, with a follow-up at 72 hours and a final report within 14 days. Thousands of tiny makers — smart-home gadgets, Shopify apps, WordPress plugins, firmware shops, industrial sensor vendors — have no process, no single-reporting-platform account and nobody awake at 3 a.m. CRA Desk sells a reporting-ready kit (templates, platform onboarding, a tested runbook) plus an on-call service that drafts and files the report when it happens.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Reporting obligations are live now; full product requirements with CE marking follow on 11 December 2027, so demand only grows.</li><li>Products already on the market are exempt from the design rules but not from reporting — the installed base is the customer.</li><li>Conformity bodies are active since June 2026; small makers cannot ignore it and cannot staff it.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Ready kit</strong>, €490 once: templates, platform account, runbook, one tabletop drill.</li><li><strong>Desk</strong>, €149/month: on-call drafting and filing, 24/7, plus an annual drill.</li><li><strong>Desk for agencies</strong>, €390/month: covers up to ten products of a software agency or MSP.</li></ul>
+    <p>Near-zero marginal cost until an incident; the founder already works on-call rotas. Twenty Desk customers is €3,000 a month.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>EU product makers under 50 staff</strong><small>Every software or connected-hardware product sold in the EU is in scope; the long tail of small makers is the underserved part.</small></div>
+    <div><span>Chance of success</span><strong>6 / 10</strong><small>Seven factors: founder fit 8, market 7, regulation 7, differentiation 6, economics 6, key dependency 5, capital and time 4. The dependency is proving the service under a real 24-hour clock without a mistake.</small><em class="raise">What would raise it substantially: five paying pilots from one niche such as Shopify app developers (+2); a referral agreement with a conformity assessment body (+1); a public runbook that ranks for "CRA reporting" in German (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€3 000 lean · €5 000 full</strong><small>Kit, website, platform onboarding, a legal review of the templates; full adds insurance and a second on-call person.</small></div>
+  </div>
+</article>
+<article class="idea" id="paygap">
+  <div>
+    <div class="status">Concept · October 2026 · working name PayGap</div>
+    <h2>PayGap — pay-transparency reports for mid-size companies</h2>
+    <p>The EU Pay Transparency Directive requires employers with 100 or more employees to report their gender pay gap and justify any gap above 5%. Member states must transpose it by 19 March 2027, and the first reports fall in 2027. HR managers at mid-size German and Austrian companies will have to turn a payroll export into a compliant report, and their payroll software mostly will not do it. PayGap is a web tool: upload the export, map the columns, get the report, the category breakdown and the plain-language explanation the works council will ask for.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>A hard legal date with a named reporting duty and a named audience (HR, works council, labour inspectorate).</li><li>Large employers have consultancies; the 100–500 band has nobody and a spreadsheet.</li><li>Switzerland already runs the Logib equal-pay analysis for 100+ staff — the same buyer, the same data, a second use.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Report</strong>, €490/year per legal entity: unlimited reports, exports in German and English.</li><li><strong>Advisory add-on</strong>, €900: a one-hour review with an HR lawyer partner.</li><li><strong>Treuhänder plan</strong>: resale pricing for accountants and payroll bureaus serving many firms.</li></ul>
+    <p>Pure software margin. One payroll bureau with 40 client firms pays for the whole build.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>~50 000 firms in the 100+ band across DACH</strong><small>Germany alone has about 35 000 employers over 100 staff; Austria and Switzerland add the rest.</small></div>
+    <div><span>Chance of success</span><strong>6 / 10</strong><small>Seven factors: market 8, regulation 7, economics 7, founder fit 6, differentiation 5, key dependency 5, capital and time 4. The dependency is getting the calculation legally right in each country before the first report is due.</small><em class="raise">What would raise it substantially: one Treuhänder or HR consultancy reselling it (+2); a lawyer co-signing the methodology (+1); ten reports produced for real firms before the deadline (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€5 000 lean · €8 000 full</strong><small>Build, hosting, a legal review of the method in DE and AT; full adds Swiss Logib alignment and a works-council explainer.</small></div>
+  </div>
+</article>
+<article class="idea" id="aiaudit">
+  <div>
+    <div class="status">Concept · October 2026 · working name AI Audit</div>
+    <h2>AI Audit — transparency and literacy for small companies</h2>
+    <p>The AI Act's transparency rules have applied since 2 August 2026: a chatbot must say it is a machine, generated images and text must be labelled, and employers using AI in hiring face high-risk duties from December 2027. The AI-literacy duty for every company using AI has applied since February 2025. Most small firms have a chatbot on their website, a marketing team using image generators and an HR tool with an AI filter — and no idea any of this applies. AI Audit is a half-day: inventory every AI touchpoint, grade each against the rules, fix the disclosures, and run the two-hour "KI-Kompetenz" training the law expects.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Rules in force now, enforcement powers in force now, and a December 2027 high-risk date that makes HR tools urgent.</li><li>Every web agency has clients who need this and no one to send them to.</li><li>Training is a documented duty, which means a certificate people will pay for.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Audit</strong>, €900: inventory, grading, fixes, written report.</li><li><strong>Training</strong>, €600: two hours for up to 20 staff, certificate per person.</li><li><strong>Agency bundle</strong>: audit plus training for an agency's clients at a resale rate.</li></ul>
+    <p>A day of work per client at €1,500; the content is written once. The ceiling is the founder's hours, which is why the agency channel matters.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>Every SME with a website chatbot or AI in HR</strong><small>Crowded with consultants at the large end; empty at the €900 fixed-price end.</small></div>
+    <div><span>Chance of success</span><strong>5 / 10</strong><small>Seven factors: market 7, regulation 7, founder fit 6, economics 6, differentiation 4, key dependency 5, capital and time 4. The dependency is a channel: without agencies this is one audit at a time.</small><em class="raise">What would raise it substantially: a referral deal with one web agency (+2); the training recognised by a Swiss or German trade association (+1); a self-serve version of the audit as a €49 checklist (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€2 000 lean · €4 000 full</strong><small>Checklists, slides, a certificate template, a landing page; full adds a self-serve web checklist and German video modules.</small></div>
+  </div>
+</article>
+<article class="idea" id="scamshield">
+  <div>
+    <div class="status">Concept · October 2026 · working name Scam Shield</div>
+    <h2>Scam Shield — fraud protection for seniors</h2>
+    <p>Fraud against the elderly is the fastest-growing crime category in Switzerland and Germany: fake police calls, grandchild emergencies, fake bank security, romance scams, QR-code parking fraud. The victims are over 65; the buyers are their children, who live far away and worry. Scam Shield is a subscription: harden the phone and the messaging apps, set up call filtering and a payment delay with the bank, a monthly ten-minute check-in call, a "verify before you pay" hotline, and a recovery service if it happens anyway. Twelve years in national police IT security is the credibility nobody else selling this has.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>An ageing population, a crime category growing double digits, and children who will pay for peace of mind.</li><li>Banks and police run awareness campaigns but offer no personal service.</li><li>Non-intrusive by design: setup, education and a hotline, never access to accounts.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Setup</strong>, €290: a two-hour visit or video session, phone and apps hardened, bank measures arranged.</li><li><strong>Shield</strong>, €29/month: monthly check-in, hotline, scam-alert messages in plain German.</li><li><strong>Recovery</strong>, €490: evidence, bank and police contact, account lockdown after an incident.</li></ul>
+    <p>Service hours at setup, then near-zero cost per month. A hundred households is €2,900 a month of recurring income.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>About 1.9 million Swiss residents over 65</strong><small>German-speaking Switzerland first; the same offer travels to Austria and Germany unchanged.</small></div>
+    <div><span>Chance of success</span><strong>6 / 10</strong><small>Seven factors: market 8, founder fit 8, regulation 7, differentiation 6, economics 6, key dependency 5, capital and time 3. The dependency is trust: one partnership with a known senior organisation changes everything.</small><em class="raise">What would raise it substantially: a partnership with one Pro Senectute chapter or a bank's fraud team (+2); a Swiss-German explainer video that gets shared (+1); a part-time helper for setups so the founder's hours stop being the limit (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€3 000 lean · €8 000 full</strong><small>Insurance, materials, hotline number, website; full adds a helper, printed guides and a stand at senior fairs.</small></div>
+  </div>
+</article>
+<article class="idea" id="briefing">
+  <div>
+    <div class="status">Concept · October 2026 · working name Briefing</div>
+    <h2>Briefing — EU deadlines for Swiss exporters</h2>
+    <p>Swiss companies sell into the EU but sit outside its regulatory conversation, and the next eighteen months are brutal: Cyber Resilience Act reporting now and full compliance in December 2027, Digital Product Passports for textiles and steel, EUDR, the AI Act, e-invoicing, the EU Digital Identity Wallet. A Swiss machine-parts or cosmetics maker will hear about each one from a customer's questionnaire, too late. Briefing is a monthly German-language email plus a quarterly call that says exactly which rule applies to which kind of Swiss firm, by when, and what the minimum response is. It costs almost nothing to run and is the top of the funnel for CRA Desk, PayGap, AI Audit and Guardian.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Forty-plus EU deadlines land between now and 2028 and Swiss firms have no national body translating them.</li><li>Trust is built by being right and early, twelve times a year.</li><li>Every subscriber is a warm lead for four other ideas on this board.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Free</strong>: a monthly headline email.</li><li><strong>Briefing</strong>, €18/month: the full briefing, a per-sector applicability table, the quarterly call.</li><li><strong>Team</strong>, €49/month: five seats and a question line.</li></ul>
+    <p>An evening a month to write. Two hundred paying subscribers is €3,600 a month and a mailing list that sells everything else.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>Swiss SMEs exporting to the EU</strong><small>Roughly 30 000 Swiss SMEs export goods or software into the EU; most have no compliance function.</small></div>
+    <div><span>Chance of success</span><strong>5 / 10</strong><small>Seven factors: founder fit 8, capital and time 8, economics 7, regulation 7, market 6, differentiation 4, key dependency 3. The dependency is distribution: a newsletter nobody finds is a diary.</small><em class="raise">What would raise it substantially: 200 free subscribers before charging (+2); a trade association forwarding it to members (+1); one column republished by a Swiss business paper (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€500 lean · €2 000 full</strong><small>Email tool, domain, one afternoon of design; full adds a paid push to reach the first 200 and a recorded call setup.</small></div>
+  </div>
+</article>
+<article class="idea" id="frontdesk">
+  <div>
+    <div class="status">Concept · October 2026 · working name Front Desk</div>
+    <h2>Front Desk — an Icelandic AI front desk for tourism</h2>
+    <p>Two million visitors a year, a few thousand small operators, and a language too small for the big chatbot vendors to care about. Guesthouses, tour companies and rental firms answer the same two hundred questions by email and WhatsApp at midnight: check-in, weather, the road to the glacier, cancellation, where the hot tub is. Front Desk is a bilingual assistant per property that answers from the owner's own information, takes booking requests, and hands anything odd to a human. Built by one of very few people who can write it in Icelandic and talk to the owners in their own language.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Tourism is Iceland's largest export and chronically short of staff.</li><li>Icelandic language technology is a stated government priority, with public models and funding.</li><li>Every operator already has the content; nobody has packaged it into an assistant.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Property</strong>, €79/month: website and WhatsApp assistant, Icelandic and English, owner dashboard.</li><li><strong>Group</strong>, €249/month: up to five properties.</li><li><strong>Setup</strong>, €390: content ingestion and a two-week tuning period.</li></ul>
+    <p>Hosting and model costs under €10 per property per month. Fifty properties is €4,000 a month.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>~2 500 small tourism SMEs in Iceland</strong><small>Reykjavík and the south coast first; the Faroes and Greenland share the problem and the language gap.</small></div>
+    <div><span>Chance of success</span><strong>5 / 10</strong><small>Seven factors: founder fit 8, differentiation 7, economics 7, regulation 6, market 5, key dependency 4, capital and time 3. The dependency is reaching owners on an island the founder left thirty years ago; the small market caps the upside.</small><em class="raise">What would raise it substantially: three guesthouses live before summer 2027 (+2); a listing or endorsement from the Icelandic Tourist Board or a booking platform (+1); a reseller in Reykjavík who installs it (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€4 000 lean · €12 000 full</strong><small>Build, Icelandic test content, three pilot installs; full adds a reseller margin, a Reykjavík trip and marketing to operators.</small></div>
+  </div>
+</article>
+<article class="idea" id="restore">
+  <div>
+    <div class="status">Concept · October 2026 · working name Restore Proof</div>
+    <h2>Restore Proof — restore testing as a service</h2>
+    <p>Everyone backs up; almost nobody proves a restore works until the day it doesn't. Auditors, cyber insurers and NIS2 questionnaires now ask the same question — when did you last restore, and can you show it? Restore Proof is a scheduled quarterly restore test of agreed systems into an isolated environment, timed, documented, and signed off in a one-page report the customer can hand to an insurer. It sits beside Guardian rather than inside it: Guardian evidences that backups exist and are protected, Restore Proof evidences that they come back. It is the Veeam work the founder already does for a central bank.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Insurers want tested restores within the last 90 days with documented results.</li><li>NIS2 names backup and disaster recovery as an evidenced control; supply-chain clauses push the question to Swiss suppliers.</li><li>MSPs promise restores in every contract and rarely have the hours to prove them.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Quarterly</strong>, €290/quarter per site: one agreed restore scenario, report, remediation notes.</li><li><strong>Monthly</strong>, €190/month: a scenario a month, rotating through systems.</li><li><strong>MSP white label</strong>: per-client pricing under the provider's own name.</li></ul>
+    <p>Two to four hours per test, mostly automated with Veeam SureBackup and scripts. Forty sites on quarterly is €4,600 a month.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>SMEs and IT providers in DACH</strong><small>Same buyer as Guardian, which means the first customers are already on a list.</small></div>
+    <div><span>Chance of success</span><strong>6 / 10</strong><small>Seven factors: founder fit 9, regulation 7, market 7, economics 6, differentiation 5, key dependency 5, capital and time 4. The dependency is the same one as Guardian: hours, and a first MSP partner.</small><em class="raise">What would raise it substantially: one MSP white-labelling it to its clients (+2); a cyber insurer naming it as accepted evidence (+1); automation that cuts a test to one hour of human time (+1).</em></div>
+    <div><span>Estimated cost</span><strong>€2 000 lean · €6 000 full</strong><small>Lab environment, report template, insurance; full adds a second engineer and SureBackup licensing for multiple customers.</small></div>
+  </div>
+</article>
+<article class="idea" id="legacy">
+  <div>
+    <div class="status">Concept · October 2026 · working name Legacy Vault</div>
+    <h2>Legacy Vault — what happens to your digital life</h2>
+    <p>Accounts, crypto, domains, photos, subscriptions, the password to the family NAS: when someone dies, the family spends months guessing. The question is being asked quietly in every household with a parent over fifty, and the German-speaking market has no serious, trusted provider. Legacy Vault is a guided inventory with no passwords stored in plain form, sealed instructions per asset, a named trustee, and a verified release process tied to a death certificate. Trust is the whole product, which is why hosting in Switzerland and a notary channel matter more than features.</p>
+    <h4 class="h4">Why now</h4>
+    <ul class="plain"><li>Digital assets now exceed physical ones for many people under seventy.</li><li>Estate lawyers and notaries get the question weekly and have nothing to recommend.</li><li>Swiss hosting and Swiss data-protection law are a sellable trust signal across Europe.</li></ul>
+    <h4 class="h4">Offer and price</h4>
+    <ul class="plain"><li><strong>Vault</strong>, €59/year: inventory, sealed instructions, one trustee.</li><li><strong>Family</strong>, €119/year: up to four vaults, shared trustee.</li><li><strong>Notary edition</strong>: offered through estate lawyers at a referral fee.</li></ul>
+    <p>Software margin, but acquisition is slow and emotional. A notary channel is the only cheap one.</p>
+  </div>
+  <div class="meta">
+    <div><span>Market</span><strong>People over 50 with online assets</strong><small>Roughly 3.5 million Swiss residents over 50; DACH ten times that. Willingness to pay is proven by US services, unproven in German.</small></div>
+    <div><span>Chance of success</span><strong>4 / 10</strong><small>Seven factors: founder fit 7, market 6, regulation 5, differentiation 4, economics 4, key dependency 3, capital and time 3. The dependency is trust and the release process; both take years to prove.</small><em class="raise">What would raise it substantially: a notary or estate lawyer as a channel (+2); a security audit published in full (+1); a bank or insurer offering it to customers (+2).</em></div>
+    <div><span>Estimated cost</span><strong>€6 000 lean · €20 000 full</strong><small>Build, security review, legal template for the release process; full adds an independent audit, Swiss hosting contracts and a notary programme.</small></div>
   </div>
 </article>
   </div>
